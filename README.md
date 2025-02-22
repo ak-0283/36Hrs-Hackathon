@@ -42,15 +42,13 @@ During this 36-hour hackathon, we:
 - Enhanced our skills in responsive web design and performance optimization.
 
 ## 🤝 Contributors
-- [Your Name](https://github.com/your-username)
-- [Team Member 1](https://github.com/team-member1)
-- [Team Member 2](https://github.com/team-member2)
+- [Team Member 1](https://github.com/ak-0283)
+- [Team Member 2](https://github.com/ankita14-p)
+- [Team Member 3](https://github.com/barnali13)
+- [Team Member 4](https://github.com/Gunjan1621)
 
 ## 📜 License
 This project is licensed under the **MIT License**.
 
 ## 🌟 Show Your Support
 If you like this project, give it a ⭐ on GitHub and feel free to contribute!
-
----
-Happy Coding! 🚀
