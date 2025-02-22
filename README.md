@@ -44,6 +44,8 @@ During this 36-hour hackathon, we:
 ## 🤝 Contributors
 - [Team Member 1](https://github.com/ak-0283)
 - [Team Member 2](https://github.com/ankita14-p)
+- [Team Member 3](https://github.com/barnali13)
+- [Team Member 4](https://github.com/Gunjan1621)
 
 ## 📜 License
 This project is licensed under the **MIT License**.
