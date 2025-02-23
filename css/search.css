@@ -78,24 +78,62 @@ h3{
     height: 100vh;
     margin: 20px 0;
 }
-.search{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
 
+.search {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Initial box shadow */
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+  width: 350px;
+  border: 2px solid transparent;
 }
-.search input{
-    width: 500px;
-    background-color:transparent ;
-    padding: 10px;
-    border: 2px solid rgba(61, 59, 59, 0.5);
-    outline: none;
-    font-size: 16px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-inline-start: -2px;
+
+.search:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.search:focus-within {
+  box-shadow: 0px 6px 18px rgba(0, 123, 255, 0.5); /* Highlight effect when input is focused */
+  border-color: #007bff; /* Border color on focus */
+}
+
+.search-icon {
+  color: #007bff;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.search:hover .search-icon {
+  transform: scale(1.1); /* Slightly enlarges icon on hover */
+}
+
+.search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 8px;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.search input:focus {
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.6); /* Glowing effect */
+  border-radius: 5px;
+}
+
+.search input::placeholder {
+  color: #aaa;
+  transition: color 0.3s ease-in-out;
+}
+
+.search input:focus::placeholder {
+  color: #007bff; /* Changes placeholder color when focused */
 }
 .search-icon{
     background-color: #7e7699;
