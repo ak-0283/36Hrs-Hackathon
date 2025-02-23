@@ -13,6 +13,9 @@
 }
 body {
   background-color: #e0eefa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pc {
   width: 400px;

@@ -13,18 +13,38 @@
 body {
   background-color: #e0eefa;
 }
+
 .pc {
-  width: 410px;
-  height: 632px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90%; /* Make it flexible */
+  max-width: 410px; /* Keep a max width */
+  height: auto; /* Allow height to adjust */
+  aspect-ratio: 410 / 632; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center it */
   border: 5px solid var(--font-color-main);
   border-radius: 40px;
   box-shadow: black 0px 0px 10px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-.pc:hover{
-    box-shadow: black 0px 0px 20px;
+.pc:hover {
+  box-shadow: black 0px 0px 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .pc {
+    width: 95%; /* Increase width for small screens */
+    max-width: 350px; /* Reduce max width */
+    border-radius: 30px; /* Adjust border radius */
+  }
+}
+
+@media (max-width: 360px) {
+  .pc {
+    width: 100%; /* Full width on very small screens */
+    max-width: 320px;
+    border-radius: 20px;
+  }
 }
 
 .nav-links:hover{

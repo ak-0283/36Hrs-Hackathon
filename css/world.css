@@ -13,6 +13,9 @@
 }
 body {
   background-color: #e0eefa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pc {
   width: 400px;
@@ -139,9 +142,9 @@ nav ul li a:hover{
     gap: 5px;
 }
 .section .date{
-     font-size: 18px;
-     color: #444;
-     font-style: italic;
+    font-size: 18px;
+    color: #444;
+    font-style: italic;
 }
 .add-section-title{
     color: #332464;
@@ -149,19 +152,40 @@ nav ul li a:hover{
     margin-bottom: 10px;
 
 }
-.box{
-    width: 100%;
-    padding: 20px 0;
-    margin: 20px 0;
-    border-radius: 10px ;
-    border: 1px solid gray;
-    box-shadow: 0px 4px 4px rgba(61, 59, 59, 0.5);
+
+.box {
+  width: 90%; /* Adjust width to fit smaller screens */
+  max-width: 400px; /* Prevent it from getting too large */
+  padding: 15px;
+  margin: 20px auto; /* Centering */
+  border-radius: 10px;
+  border: 1px solid gray;
+  box-shadow: 0px 4px 4px rgba(61, 59, 59, 0.5);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-.box:hover{
-    box-shadow: black 0px 0px 20px;;
-    cursor: pointer;
+.box:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transform: scale(1.02); /* Slight enlargement on hover */
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .box {
+      width: 95%;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+      width: 98%;
+      padding: 8px;
+      border-radius: 8px;
+  }
+}
+
 
 .name{
     color: var(--font-color-main);
